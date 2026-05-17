@@ -63,7 +63,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "dim_provincia",
+						"name": "dim_canton",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -176,7 +176,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "dim_provincia"
+					"table": "dim_canton"
 				}
 			},
 			"dependsOn": [
@@ -195,7 +195,7 @@
 				"annotations": [],
 				"type": "Excel",
 				"typeProperties": {
-					"sheetName": "dim_provincia",
+					"sheetName": "dim_canton",
 					"location": {
 						"type": "AzureBlobStorageLocation",
 						"fileName": "modelo_siniestros.xlsx",
