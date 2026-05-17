@@ -89,13 +89,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Excel2",
+						"referenceName": "Excel3",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					}
 				]
