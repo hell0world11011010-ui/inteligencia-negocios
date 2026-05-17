@@ -1,0 +1,34 @@
+{
+	"name": "Excel2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageproyct",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "dim_provincia",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "modelo_siniestros.xlsx",
+				"container": "proyect"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "id_provincia",
+				"type": "String"
+			},
+			{
+				"name": "nombre_provincia",
+				"type": "String"
+			},
+			{
+				"name": "region",
+				"type": "String"
+			}
+		]
+	}
+}
