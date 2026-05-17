@@ -48,7 +48,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "dim_provincia"
+			"table": "dim_canton"
 		}
 	}
 }
