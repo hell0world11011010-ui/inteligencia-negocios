@@ -1,0 +1,20 @@
+{
+	"name": "Excel1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageproyct",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "modelo_siniestros.xlsx",
+				"container": "proyect"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}
