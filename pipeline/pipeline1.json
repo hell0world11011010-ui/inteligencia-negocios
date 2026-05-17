@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "dim_tiempo",
+				"name": "dim_provincia",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
