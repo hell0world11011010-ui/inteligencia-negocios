@@ -200,7 +200,8 @@
 						"type": "AzureBlobStorageLocation",
 						"fileName": "modelo_siniestros.xlsx",
 						"container": "proyect"
-					}
+					},
+					"firstRowAsHeader": true
 				},
 				"schema": [
 					{
