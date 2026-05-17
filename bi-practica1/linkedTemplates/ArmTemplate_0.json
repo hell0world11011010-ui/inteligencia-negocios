@@ -191,7 +191,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "dim_tiempo"
+					"table": "dim_provincia"
 				}
 			},
 			"dependsOn": [
@@ -210,7 +210,7 @@
 				"annotations": [],
 				"type": "Excel",
 				"typeProperties": {
-					"sheetName": "dim_tiempo",
+					"sheetName": "dim_provincia",
 					"location": {
 						"type": "AzureBlobStorageLocation",
 						"fileName": "modelo_siniestros.xlsx",
@@ -264,7 +264,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "dim_tiempo",
+						"name": "dim_provincia",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
