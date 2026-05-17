@@ -11,6 +11,9 @@
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
 		"AzureTableStorage1_connectionString": {
 			"value": ""
 		},
@@ -24,6 +27,15 @@
 			"value": "bdsiniestros1"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "palacios"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "svsiniestrosbi.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "bdsiniestros1"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
 			"value": "palacios"
 		}
 	}
