@@ -215,31 +215,40 @@
 						"type": "AzureBlobStorageLocation",
 						"fileName": "modelo_siniestros.xlsx",
 						"container": "proyect"
-					}
+					},
+					"firstRowAsHeader": true
 				},
 				"schema": [
 					{
+						"name": "id_tiempo",
 						"type": "String"
 					},
 					{
+						"name": "fecha",
 						"type": "String"
 					},
 					{
+						"name": "anio",
 						"type": "String"
 					},
 					{
+						"name": "trimestre",
 						"type": "String"
 					},
 					{
+						"name": "mes",
 						"type": "String"
 					},
 					{
+						"name": "mes_nombre",
 						"type": "String"
 					},
 					{
+						"name": "dia",
 						"type": "String"
 					},
 					{
+						"name": "dia_semana",
 						"type": "String"
 					}
 				]
