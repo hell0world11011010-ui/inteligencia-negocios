@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlDatabase2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "svsiniestrosbi.database.windows.net",
+			"database": "bdsiniestros1",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "palacios",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEY4QTc0QjE1LUI3NjctNDk4RS05RDRELTVDRjk1QjM5QzM1Ml82YmM4YWY4MC05OWNhLTQyZTYtOGQ5NS1mMGUwNGQ2ZGJmYzMiDQp9"
+		}
+	}
+}
