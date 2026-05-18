@@ -191,7 +191,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "dim_tipo_siniestro"
+					"table": "dim_causa"
 				}
 			},
 			"dependsOn": [
@@ -210,7 +210,7 @@
 				"annotations": [],
 				"type": "Excel",
 				"typeProperties": {
-					"sheetName": "dim_canton",
+					"sheetName": "dim_causa",
 					"location": {
 						"type": "AzureBlobStorageLocation",
 						"fileName": "modelo_siniestros.xlsx",
@@ -303,7 +303,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "dim_tipo_siniestro",
+						"name": "dim_causa",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -340,7 +340,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "Excel2",
+								"referenceName": "Excel1",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -360,7 +360,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/Excel2')]",
+				"[concat(variables('factoryId'), '/datasets/Excel1')]",
 				"[concat(variables('factoryId'), '/datasets/AzureSqlTable1')]"
 			]
 		}
