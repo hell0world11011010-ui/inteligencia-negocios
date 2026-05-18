@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "th_siniestros",
+				"name": "dim_tiempo",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -40,13 +40,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Excel1",
+						"referenceName": "Excel3",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					}
 				]
