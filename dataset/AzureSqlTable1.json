@@ -48,7 +48,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "dim_tipo_siniestro"
+			"table": "dim_causa"
 		}
 	}
 }
