@@ -40,13 +40,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Excel3",
+						"referenceName": "Excel4",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable2",
+						"referenceName": "AzureSqlTable3",
 						"type": "DatasetReference"
 					}
 				]
