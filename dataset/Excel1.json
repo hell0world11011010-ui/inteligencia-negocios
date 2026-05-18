@@ -8,7 +8,7 @@
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
-			"sheetName": "dim_canton",
+			"sheetName": "dim_causa",
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "modelo_siniestros.xlsx",
