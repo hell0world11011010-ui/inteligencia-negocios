@@ -191,7 +191,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "dim_canton"
+					"table": "dim_zona"
 				}
 			},
 			"dependsOn": [
@@ -258,13 +258,52 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/Excel2')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "storageproyct",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Excel",
+				"typeProperties": {
+					"sheetName": "dim_zona",
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"fileName": "modelo_siniestros.xlsx",
+						"container": "proyect"
+					},
+					"firstRowAsHeader": true
+				},
+				"schema": [
+					{
+						"name": "id_zona",
+						"type": "String"
+					},
+					{
+						"name": "zona",
+						"type": "String"
+					},
+					{
+						"name": "tipo_zona",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/storageproyct')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/pipeline1')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "dim_canton",
+						"name": "dim_zona",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -301,7 +340,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "Excel1",
+								"referenceName": "Excel2",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -321,7 +360,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/Excel1')]",
+				"[concat(variables('factoryId'), '/datasets/Excel2')]",
 				"[concat(variables('factoryId'), '/datasets/AzureSqlTable1')]"
 			]
 		}
