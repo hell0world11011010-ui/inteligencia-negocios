@@ -48,7 +48,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "dim_zona"
+			"table": "dim_tipo_siniestro"
 		}
 	}
 }
