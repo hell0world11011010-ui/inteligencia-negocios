@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "dim_canton",
+				"name": "dim_zona",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -40,7 +40,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Excel1",
+						"referenceName": "Excel2",
 						"type": "DatasetReference"
 					}
 				],
