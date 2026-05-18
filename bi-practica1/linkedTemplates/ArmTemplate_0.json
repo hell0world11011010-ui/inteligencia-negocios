@@ -191,7 +191,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "dim_condicion"
+					"table": "th_siniestros"
 				}
 			},
 			"dependsOn": [
@@ -210,7 +210,7 @@
 				"annotations": [],
 				"type": "Excel",
 				"typeProperties": {
-					"sheetName": "dim_condicion",
+					"sheetName": "th_siniestros",
 					"location": {
 						"type": "AzureBlobStorageLocation",
 						"fileName": "modelo_siniestros.xlsx",
@@ -303,7 +303,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "dim_condicion",
+						"name": "th_siniestros",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
