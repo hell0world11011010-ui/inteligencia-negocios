@@ -48,7 +48,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "dim_condicion"
+			"table": "th_siniestros"
 		}
 	}
 }
